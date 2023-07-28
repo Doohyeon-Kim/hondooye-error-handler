@@ -94,10 +94,10 @@ packages:
     dependency: "direct main"
     description:
       name: hondooye_logger
-      sha256: "41842196a4baa39b90da106599968f60e6ce8bec178c70b0e953eaf80e3e4c05"
+      sha256: fd0e53f4405c32264eda7965ee974270445c8fdd43af0935c3831eb94290c80c
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.1"
+    version: "0.0.2"
   http:
     dependency: transitive
     description:
