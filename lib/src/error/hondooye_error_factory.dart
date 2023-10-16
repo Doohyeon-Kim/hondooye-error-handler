@@ -67,42 +67,46 @@ class Conflict extends HdyErrors {
             message: message ??
                 "The request could not be completed due to a conflict with the current state of the resource. Whenever a resource conflict would be caused by fulfilling the request.",
             title: title ?? "Conflict",
-            detail: detail ??
-                "That request is a conflicting request.\nPlease change the data and try again.");
+            detail: detail ?? "That request is a conflicting request.\nPlease change the data and try again.");
+}
+
+class UnprocessableEntity extends HdyErrors {
+  UnprocessableEntity({String? code, String? type, String? message, String? title, String? detail})
+      : super(
+            type: type ?? ErrorType.http.unprocessableEntity,
+            message: message ?? "The request was well-formed but was unable to be followed due to semantic errors.",
+            title: title ?? "Unprocessable Entity",
+            detail: detail ?? "That request is a conflicting request.\nPlease change the data and try again.");
 }
 
 class RequestTimeout extends HdyErrors {
   RequestTimeout({String? type, String? message, String? title, String? detail})
       : super(
             type: type ?? ErrorType.http.requestTimeout,
-            message: message ??
-                "The client did not produce a request within the time that the server was prepared to wait.",
+            message:
+                message ?? "The client did not produce a request within the time that the server was prepared to wait.",
             title: title ?? "Request Timeout",
             detail: detail ?? "");
 }
 
 class InternalServerError extends HdyErrors {
-  InternalServerError(
-      {String? type, String? message, String? title, String? detail})
+  InternalServerError({String? type, String? message, String? title, String? detail})
       : super(
             type: type ?? ErrorType.http.internalServerError,
             message: message ??
                 "A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.",
             title: title ?? "Internal Server Error",
-            detail: detail ??
-                "There was a problem with the server. Please send a report.");
+            detail: detail ?? "There was a problem with the server. Please send a report.");
 }
 
 class ServiceUnavailable extends HdyErrors {
-  ServiceUnavailable(
-      {String? type, String? message, String? title, String? detail})
+  ServiceUnavailable({String? type, String? message, String? title, String? detail})
       : super(
             type: type ?? ErrorType.http.serviceUnavailable,
             message: message ??
                 "The server cannot handle the request (because it is overloaded or down for maintenance). Generally, this is a temporary state.",
             title: title ?? "Service Unavailable",
-            detail: detail ??
-                "There was a problem with the server temporarily. Please try again later.");
+            detail: detail ?? "There was a problem with the server temporarily. Please try again later.");
 }
 
 class UnknownError extends HdyErrors {
@@ -111,16 +115,14 @@ class UnknownError extends HdyErrors {
             type: type ?? ErrorType.unknownError,
             message: message ?? "",
             title: title ?? "Unknown Error",
-            detail: detail ?? "Unknown Error occurred. Please send a report. ");
+            detail: detail ?? "Unknown Error occurred. Please send a report.");
 }
 
 class UnstableNetwork extends HdyErrors {
-  UnstableNetwork(
-      {String? type, String? message, String? title, String? detail})
+  UnstableNetwork({String? type, String? message, String? title, String? detail})
       : super(
             type: type ?? ErrorType.unstableNetwork,
             message: message ?? "The network state is not stable.",
             title: title ?? "Unstable Network",
-            detail: detail ??
-                "The network state is not stable. Please try again later.");
+            detail: detail ?? "The network state is not stable. Please try again later.");
 }

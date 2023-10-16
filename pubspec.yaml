@@ -1,6 +1,6 @@
 name: hondooye_error_handler
 description: A useful error handler
-version: 0.0.2
+version: 0.0.3
 repository: "https://github.com/Doohyeon-Kim/hondooye-error-handler.git"
 
 environment:

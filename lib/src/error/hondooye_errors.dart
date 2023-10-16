@@ -40,6 +40,8 @@ class HdyErrors implements HdyError {
 
   factory HdyErrors.conflict({String? type, String? message, String? title, String? detail}) = Conflict;
 
+  factory HdyErrors.unprocessableEntity({String? type, String? message, String? title, String? detail}) = UnprocessableEntity;
+
   factory HdyErrors.requestTimeout({String? type, String? message, String? title, String? detail}) = RequestTimeout;
 
   factory HdyErrors.internalServerError({String? type, String? message, String? title, String? detail}) = InternalServerError;

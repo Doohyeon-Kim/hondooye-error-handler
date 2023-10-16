@@ -25,6 +25,7 @@ class _HttpError {
   String notFound = "Not Found";
   String requestTimeout = "Request Timeout";
   String conflict = "Conflict";
+  String unprocessableEntity = "Unprocessable Entity";
   String internalServerError = "Internal Server Error";
   String serviceUnavailable = "Service Unavailable";
 }
