@@ -1,5 +1,3 @@
-library hondooye_error_handler;
-
 export 'src/constant/constant.dart';
 export 'src/error/hondooye_error.dart';
 export 'src/error/hondooye_errors.dart';

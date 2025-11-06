@@ -5,13 +5,12 @@ import '../error_message_handler/hondooye_message_handler.dart';
 
 class HdyErrorDialog extends StatelessWidget {
   const HdyErrorDialog(
-      {Key? key,
+      {super.key,
       required this.context,
       required this.errorMessage,
       this.errorTitleTextWidget,
       this.errorDetailTextWidget,
-      this.buttonText})
-      : super(key: key);
+      this.buttonText});
 
   final BuildContext context;
   final HdyErrorMessage errorMessage;

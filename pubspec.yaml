@@ -4,17 +4,17 @@ version: 0.0.3
 repository: "https://github.com/Doohyeon-Kim/hondooye-error-handler.git"
 
 environment:
-  sdk: ">=2.17.0 <4.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
 
 dependencies:
-  hondooye_logger: ^0.0.2
+  hondooye_logger: ^1.0.0
   flutter:
     sdk: flutter
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.1
+  flutter_lints: ^6.0.0
 
 flutter:

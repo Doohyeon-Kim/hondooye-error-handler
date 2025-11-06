@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:hondooye_design_system/hondooye_design_system.dart';
 
 class ThemeNotifier extends InheritedWidget {
-  ThemeNotifier({super.key, required Widget child}) : super(child: child);
-  ValueNotifier<ThemeData> theme = ValueNotifier(HdyLightTheme.themeData);
+  ThemeNotifier({super.key, required super.child})
+      : theme = ValueNotifier(HdyLightTheme.themeData);
+  final ValueNotifier<ThemeData> theme;
 
   void setLightMode() {
     theme.value = HdyLightTheme.themeData;

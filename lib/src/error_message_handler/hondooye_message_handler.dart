@@ -12,7 +12,7 @@ class HdyErrorMessageHandler {
 
   static bool checkErrorMessageExist() => _errorMessage != null ? true : false;
 
-  static setErrorMessage({required HdyError hdyError}) {
+  static void setErrorMessage({required HdyError hdyError}) {
     _errorMessage =
         HdyErrorMessage(title: hdyError.title!, detail: hdyError.detail!);
   }
@@ -25,7 +25,7 @@ class HdyErrorMessageHandler {
     }
   }
 
-  static showError(
+  static void showError(
       {required BuildContext context, required WidgetType widgetType, Widget? customErrorDialog}) {
     switch (widgetType) {
       case WidgetType.dialog:
