@@ -1,28 +1,7 @@
-## 1.0.0
+## Project Ownership Notice
 
-### Major Update - Latest Flutter Version Compatibility
+On January 5, 2026, all `hondooye_*` packages, including `hondooye_error_handler`, were officially migrated to **XERKONIX Inc.** and are now maintained under the name `xerkonix_error_handler`.  
+The actively maintained package can be found on pub.dev: [xerkonix_error_handler](https://pub.dev/packages/xerkonix_error_handler).
 
-This release includes major upgrades to ensure full compatibility with the latest Flutter version (3.35.7).
-
-#### Breaking Changes
-- **Flutter SDK requirement changed**: `>=3.0.0 <4.0.0` (previously: `>=2.17.0 <4.0.0`)
-- **Flutter requirement changed**: `>=3.0.0` (previously: `>=1.17.0`)
-
-#### Dependencies Updates
-- **hondooye_logger**: `^0.0.2` → `^1.0.0` (latest version)
-- **flutter_lints**: `^2.0.1` → `^6.0.0` (latest version)
-
-#### Code Improvements
-- Updated to use `super.key` following Flutter 3.x recommendations
-- Added explicit type annotations to all methods
-- Removed unnecessary `library` declaration
-- Resolved all lint warnings
-
-#### Compatibility
-- Fully compatible with Flutter 3.0.0 and above
-- Fully compatible with Dart 3.0.0 and above
-- Supports all platforms: Web, iOS, Android, Linux, macOS, Windows
-
-## 0.0.3
-
-Add 422 Error Code.
+Future changes will primarily be tracked in the XERKONIX-managed package.  
+This changelog is kept only as a historical reference for the legacy `hondooye_error_handler` package.

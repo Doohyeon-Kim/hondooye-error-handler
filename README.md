@@ -1,91 +1,14 @@
 # hondooye_error_handler
 
-[![pub package](https://img.shields.io/pub/v/hondooye_error_handler.svg)](https://pub.dev/packages/hondooye_error_handler)
+## Project Ownership & Package Migration
 
-A powerful and flexible error handling package for Flutter projects.
+This package was originally developed and maintained by **Doohyeon Kim** under the name `hondooye_error_handler`.  
+On January 5, 2026, all `hondooye_*` packages, including this one, were officially migrated and are now professionally developed and maintained by **XERKONIX Inc.** as part of the `xerkonix_*` family of libraries.
 
-## Features
+The actively maintained successor to this package is:
 
-- 🎯 Simple and intuitive API
-- 🔧 Customizable error dialogs
-- 📱 Full platform support (Web, iOS, Android, Linux, macOS, Windows)
-- 🚀 Perfect compatibility with Flutter 3.0+
-- 🎨 Support for various error types
+- Package: `xerkonix_error_handler`
+- Pub.dev: [xerkonix_error_handler](https://pub.dev/packages/xerkonix_error_handler)
 
-## Version
-
-**Current version: 1.0.0**
-
-## Getting started
-
-### Installation
-
-Add this to your `pubspec.yaml` file:
-
-```yaml
-dependencies:
-  hondooye_error_handler: ^1.0.0
-```
-
-Then install the package:
-
-```bash
-flutter pub get
-```
-
-## Usage
-
-### Basic Usage
-
-```dart
-import 'package:hondooye_error_handler/hondooye_error_handler.dart';
-
-try {
-  // Code that may throw an error
-  throw HdyException(HdyErrors.conflict());
-} on HdyException {
-  HdyErrorMessageHandler.showError(
-    context: context,
-    widgetType: WidgetType.dialog,
-  );
-}
-```
-
-### Custom Error Dialog
-
-```dart
-HdyErrorMessageHandler.showError(
-  context: context,
-  widgetType: WidgetType.dialog,
-  customErrorDialog: AlertDialog(
-    title: Text('Custom Error'),
-    content: Text('Error message'),
-    actions: [/* ... */],
-  ),
-);
-```
-
-## Requirements
-
-- Flutter: `>=3.0.0`
-- Dart: `>=3.0.0 <4.0.0`
-
-## Additional information
-
-### Major Changes (1.0.0)
-
-- Full compatibility with Flutter 3.0+
-- Uses latest hondooye_logger (^1.0.0)
-- All code updated and lint warnings resolved
-
-For detailed changelog, see [CHANGELOG.md](CHANGELOG.md).
-
-### License
-
-This project is licensed under the terms specified in the [LICENSE](LICENSE) file.
-
-### Repository
-
-GitHub: [https://github.com/Doohyeon-Kim/hondooye-error-handler](https://github.com/Doohyeon-Kim/hondooye-error-handler)
-
-
+This project remains open source, but new features, improvements, and long-term support are provided in the XERKONIX-managed package.  
+For new projects, it is strongly recommended to use `xerkonix_error_handler` instead of `hondooye_error_handler`.
