@@ -5,3 +5,7 @@ The actively maintained package can be found on pub.dev: [xerkonix_error_handler
 
 Future changes will primarily be tracked in the XERKONIX-managed package.  
 This changelog is kept only as a historical reference for the legacy `hondooye_error_handler` package.
+
+## 1.0.0
+
+- Documentation updated to reflect project ownership transfer and migration to `xerkonix_error_handler`.
